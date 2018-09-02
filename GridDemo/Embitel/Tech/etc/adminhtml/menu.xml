@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Embitel_Tech::manager" title="Embitel Tech" module="Embitel_Tech" sortOrder="10" resource="Embitel_Tech::manager"/>
+        <add id="Embitel_Tech::subscribe" title="Embitel Tech" module="Embitel_Tech" sortOrder="0" parent="Embitel_Tech::manager"
+                action="embitel/index/subscribe" resource="Embitel_Tech::subscribe"/>
+    </menu>
+</config>

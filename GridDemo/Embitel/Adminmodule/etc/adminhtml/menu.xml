@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Embitel_Adminmodule::manager" title="Embitel Adminmodule" module="Embitel_Adminmodule" sortOrder="10" resource="Embitel_Adminmodule::manager"/>
+        <add id="Embitel_Adminmodule::adminmodule" title="Embitel Adminmodule" module="Embitel_Adminmodule" sortOrder="0" parent="Embitel_Adminmodule::manager"
+                action="adminmodule" resource="Embitel_Adminmodule::subscribe"/>
+    </menu>
+</config>

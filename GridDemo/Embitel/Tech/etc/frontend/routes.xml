@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module configuration
+ *
+ * @category  Embitel
+ * @package   Embitel_Tech
+ * @author    Fahim Khan <Faim.khan@embitel.com>
+ * @copyright 2015-2016 Embitel technologies (I) Pvt. Ltd
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="tech" frontName="tech">
+            <module name="Embitel_Tech" />
+        </route>
+    </router>
+</config>

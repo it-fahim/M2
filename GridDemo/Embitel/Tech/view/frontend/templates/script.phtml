@@ -1,0 +1,32 @@
+<?php
+
+//$viewModel = $block->getData(key: 'viewModel');
+$viewModel = $block->getData('viewModel');
+
+?>
+
+
+<div data-bind="scope:'fahim-component'">
+    <h1 data-bind="text: title"></h1>
+    
+    <ul data-bind="foreach: {data: getItems(), as: 'page'}">
+        <li><a data-bind="attr: {href: page.url}, text:page.title"></a></li>
+    </ul>
+
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "fahim-component":{
+                    "component":"Embitel_Tech/js/component",
+                    "title": "Avaialble Pages",
+                    "items": <?= $viewModel->getItemsJson(); ?>
+                }
+            }
+        }
+    }
+}
+</script>

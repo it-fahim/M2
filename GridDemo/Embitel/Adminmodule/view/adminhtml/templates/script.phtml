@@ -1,0 +1,9 @@
+<?php
+$collection = $block->getDetails();
+echo "<pre/>";
+print_r($collection->getData());
+die;
+foreach($collection as $data){
+    echo $data->getName();
+}
+?>
