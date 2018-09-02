@@ -1,0 +1,5 @@
+<?php
+
+ekneklfnke
+echo "lalu";
+?>
